@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kosugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    gap: 40px;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #437eae;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 30px;
+    color: white;
+}
+main {
+    width: 80vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.word-selector {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 80vw;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.word-selector__option {
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    color: rgb(58, 58, 58);
+}
+.word-selector__option:last-child {
+    height: 40px;
+    min-width: 130px;
+}
+.word-selector__option.active {
+    background-color: #437eae;
+    color: white;
+}
+
+.word-container {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.answer-container {
+    font-size: 26px;
+    height: 50px;
+    text-align: center;
+    background-color: #d17c7a;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+}
+.right{
+    background-color: #43ae5e;
+}
+
+.next-word {
+    background-color: #437eae;
+    height: 50px;
+    width: 240px;
+    border-radius: 15px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
