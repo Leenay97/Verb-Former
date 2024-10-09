@@ -157,29 +157,11 @@ main {
     box-shadow:0 0 0 0px #437eae;
 
 }
-.b02 {
-    border-radius: 10px 0 0 0;
 
-}
-.b04 {
-    border-radius:0  10px 0 0;
-
-}
-.b36 {
-    border-radius:0  0 10px 0;
-
-}
-.b33 {
-    border-radius:0  0  0 10px;
-
-}
 .b35 {
     font-size: 15px;
 }
-.b05 {
-    border-radius:10px 0  0  0 ;
 
-}
 
 .b02, .b03, .b04, .b05, .b13, .b21, .b25, .b33 {
     font-weight: bold;
@@ -196,15 +178,11 @@ main {
 
 .b05, .b13, .b21, .b25, .b33 {
     font-size: 16px;
-    height: 40px;
     border-radius: 15px 0 0 15px;
     box-shadow: unset;
-    padding: 5px 0;
+    padding: 20px 0;
 }
 
-.b34 {
-    border-radius: 0 0 0 15px;
-}
 
 
 .hidden {
