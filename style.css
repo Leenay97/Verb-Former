@@ -14,7 +14,7 @@ body {
     width: 100vw;
     align-items: center;
     gap: 40px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 header {
     width: 100%;
@@ -24,8 +24,25 @@ header {
     font-weight: bold;
     padding: 15px 30px;
     color: white;
+    position: fixed;
+    z-index: 5;
+    box-shadow: 0 2px 3px 0px white;
+}
+.help-button {
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    background-color: #80b7e4;
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 7px;
+
 }
 main {
+    margin-top: 80px;
     width: 80vw;
     height: 400px;
     display: flex;
@@ -90,4 +107,114 @@ main {
     border: 0;
     color: white;
     font-size: 20px;
+}
+
+.helper {
+    position: absolute;
+    top: 60px;
+    width: 100vw;
+    background-color: white;
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.helper__notes {
+    padding: 0 20px;
+    text-align: left;
+    line-height: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#base h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.base-notes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    flex-direction: row;
+    gap: 3px;
+    width: 280px;
+    padding: 0;
+    border-collapse: collapse;
+}
+.base-cell {
+    width: 20vw;
+    min-width: 70px;
+    height: 70px;
+    padding: 0;
+    box-shadow:0 0 0 3px #437eae;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 0;
+}
+.b01 {
+    box-shadow:0 0 0 0px #437eae;
+
+}
+.b02 {
+    border-radius: 10px 0 0 0;
+
+}
+.b04 {
+    border-radius:0  10px 0 0;
+
+}
+.b36 {
+    border-radius:0  0 10px 0;
+
+}
+.b33 {
+    border-radius:0  0  0 10px;
+
+}
+.b35 {
+    font-size: 15px;
+}
+.b05 {
+    border-radius:10px 0  0  0 ;
+
+}
+
+.b02, .b03, .b04, .b05, .b13, .b21, .b25, .b33 {
+    font-weight: bold;
+    background-color: #437eae;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.b05, .b13, .b21, .b25, .b33 {
+    font-size: 16px;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 20px 0;
+    background-color: #437eae;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    color: white;
+    text-align: left;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    background-color: #437eae;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 20px 0;
 }

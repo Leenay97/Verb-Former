@@ -5,7 +5,9 @@ let thirdVerb = ["くる","べんきょうする", "さんかする", "グーグ
 let verbContainer = document.querySelector('.word-container');
 let answer = document.querySelector('.answer-container');
 let selectors = document.querySelectorAll('.word-selector__option');
-let nextButton = document.querySelector('.next-word')
+let nextButton = document.querySelector('.next-word');
+let helpButton = document.querySelector('.help-button');
+let helper = document.querySelector('.helper');
 // let masu = document.querySelector('.masu');
 // let ta = document.querySelector('.ta');
 // let nai = document.querySelector('.nai');
@@ -154,3 +156,13 @@ nextButton.addEventListener('click', (e)=>{
     nextVerb();
     answer.innerHTML = '';
 } );
+
+helpButton.addEventListener('click', (e)=>{
+    helper.classList.toggle('hidden')
+    if (helper.classList.contains('hidden')){
+        helpButton.innerHTML = '?';
+    } else {
+        helpButton.innerHTML = 'X';
+    }
+    
+})
