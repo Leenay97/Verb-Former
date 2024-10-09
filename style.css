@@ -69,6 +69,7 @@ main {
 
 .answer-container {
     font-size: 26px;
+    width: 300px;
     height: 50px;
     text-align: center;
     background-color: #d17c7a;
