@@ -6,7 +6,12 @@
     font-weight: 400;
     font-style: normal;
 }
-
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -22,7 +27,7 @@ header {
     background-color: #437eae;
     font-size: 24px;
     font-weight: bold;
-    padding: 15px 30px;
+    padding: 15px 10px;
     color: white;
     position: fixed;
     z-index: 5;
