@@ -44,6 +44,8 @@ header {
     font-weight: bold;
     text-align: center;
     padding: 7px;
+    cursor: pointer;
+    user-select: none;
 
 }
 main {
@@ -73,6 +75,8 @@ main {
     background-color: #e3e3e3;
     border-radius: 10px;
     color: rgb(58, 58, 58);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 .word-selector__option:last-child {
     height: 40px;
@@ -186,6 +190,71 @@ main {
     border-radius: 15px 0 0 15px;
     box-shadow: unset;
     padding: 20px 0;
+}
+
+
+.groups-notes {
+    display: grid;
+    grid-template-columns: 70px 60vw;
+    grid-template-rows: repeat(3, 1fr);
+    flex-direction: row;
+    gap: 3px;
+    width: 280px;
+    padding: 0;
+    border-collapse: collapse;
+}
+.group-cell {
+    min-width: 70px;
+    height: 70px;
+    padding: 0;
+    box-shadow:0 0 0 3px #437eae;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.group-rule {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    height: 40px;
+    width: 70px;
+    border-radius: 0 0 0 0px;
+    background-color: #437eae;
+    color: white;
+    font-weight: bold;
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    display: flex;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.g2, .g4, .g6 {
+    padding: 5px;
+}
+
+.masu__notes {
+    font-size: 20px;
+}
+
+.masu__forms h2{
+    border-radius: 5px;
+    width: 220px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 1px 10px;
+    text-align: center;
+}
+
+.blue {
+    color: #437eae;
+    font-weight: bold;
 }
 
 

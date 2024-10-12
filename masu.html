@@ -14,69 +14,62 @@
 <body>
     <header>
         <a href="index.html"> 〈 戻る </a>
-        <!-- <div class="help-button">?</div> -->
+        <div class="help-button">?</div>
     </header>
     <main>
         <div class="word-selector">
-            <div class="word-selector__option masu active">ます</div>
-            <div class="word-selector__option nai">ません</div>
-            <div class="word-selector__option ta">ました</div>
-            <div class="word-selector__option nakatta">ませんでした</div>
+            <div class="word-selector__option masu active">Наст</div>
+            <div class="word-selector__option nai">Отр</div>
+            <div class="word-selector__option ta">Прош</div>
+            <div class="word-selector__option nakatta">Прош отр</div>
         </div>
         <div class="word-container">えがく</div>
         <input type="text" class="answer-container wrong">
         <button class="next-word">次の言葉</button>
     </main>
     <div class="helper hidden">
-        <div id="base">
-            <h1>Основы</h1>
-            <div class="helper__notes base-notes">
-                <div class="b01 base-cell"></div>
-                <div class="b02 base-cell">I</div>
-                <div class="b03 base-cell">II</div>
-                <div class="b04 base-cell">III</div>
-                <div class="b05 base-cell">1 осн</div>
-                <div class="b06 base-cell">き<span style="color: #437eae; font-weight: bold;">か</span><br>か<span style="color: #437eae; font-weight: bold;">わ</span></div>
-                <div class="b11 base-cell">たべ<br>み</div>
-                <div class="b12 base-cell">し<br>こ</div>
-                <div class="b13 base-cell">2 осн</div>
-                <div class="b14 base-cell">き<span style="color: #437eae; font-weight: bold;">き</span><br>か<span style="color: #437eae; font-weight: bold;">い</span></div>
-                <div class="b15 base-cell">たべ<br>み</div>
-                <div class="b16 base-cell">し<br>き</div>
-                <div class="b21 base-cell">3 осн</div>
-                <div class="b22 base-cell">き<span style="color: #437eae; font-weight: bold;">く</span><br>か<span style="color: #437eae; font-weight: bold;">う</span></div>
-                <div class="b23 base-cell">たべ<span style="color: #437eae; font-weight: bold;">る</span><br>み<span style="color: #437eae; font-weight: bold;">る</span></div>
-                <div class="b24 base-cell">す<span style="color: #437eae; font-weight: bold;">る</span><br>く<span style="color: #437eae; font-weight: bold;">る</span></div>
-                <div class="b25 base-cell">4 осн</div>
-                <div class="b26 base-cell">き<span style="color: #437eae; font-weight: bold;">け</span><br>か<span style="color: #437eae; font-weight: bold;">え</span></div>
-                <div class="b31 base-cell">たべ<span style="color: #437eae; font-weight: bold;">れ</span><br>み<span style="color: #437eae; font-weight: bold;">れ</span></div>
-                <div class="b32 base-cell">す<span style="color: #437eae; font-weight: bold;">れ</span><br><span style="color: #437eae; font-weight: bold;">くれ</span></div>
-                <div class="b33 base-cell">5 осн</div>
-                <div class="b34 base-cell">き<span style="color: #437eae; font-weight: bold;">こう</span><br>か<span style="color: #437eae; font-weight: bold;">おう</span></div>
-                <div class="b35 base-cell">たべ<span style="color: #437eae; font-weight: bold;">よう</span><br>み<span style="color: #437eae; font-weight: bold;">よう</span></div>
-                <div class="b36 base-cell">し<span style="color: #437eae; font-weight: bold;">よう</span><br>こ<span style="color: #437eae; font-weight: bold;">い</span></div>
-            </div>
-
-        </div>
-        <div id="helper__masu">
-            <h1>～ます</h1>
-            <div class="helper__notes">
-                V2　+　ます
+        <div id="helper__groups">
+            <h1><span style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Группы глаголов</span></h1>
+            <div class="helper__notes groups-notes">
+                <div class="g1 group-cell">I<div class="group-rule">～U</div>
+                </div>
+                <div class="g2 group-cell">
+                    きく(kik<span class="blue">u</span>)<br>
+                    うつる(utsur<span class="blue">u</span>)
+                </div>
+                <div class="g3 group-cell">II
+                    <div class="group-rule">～Eru, ～Iru</div>
+                </div>
+                <div class="g4 group-cell">
+                    たべる(tab<span class="blue">eru</span>)<br>
+                    みる(m<span class="blue">iru</span>)
+                </div>
+                <div class="g5 group-cell">III<div class="group-rule">Suru, Kuru</div>
+                </div>
+                <div class="g6 group-cell">
+                    <span class="blue">くる</span><br>
+                    <span class="blue">する</span>
+                </div>
             </div>
         </div>
         <div id="helper__ta"></div>
-        <h1>～た</h1>
+        <h1>～ます<span style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;"> форма</span></h1>
 
         <div class="helper__container">
             <h2>
                 1
             </h2>
-            <div class="helper__notes">
-                う、つ、る　→　った<br>
-                ぬ、ぶ、む　→　んだ<br>
-                く　　　　　→　いた<br>
-                ぐ　　　　　→　いだ<br>
-                す　　　　　→　した<br>
+            <div class="helper__notes masu__notes">
+                <span class="blue">u → i ＋ ます</span><br><br>
+
+                はな<span class="blue">す</span> (hanas<span class="blue">u</span>)<br>はな<span class="blue">し</span>ます
+                (hanash<span class="blue">i</span>masu)<br><br>
+                か<span class="blue">く</span> (kak<span class="blue">u</span>)<br>か<span class="blue">き</span>ます
+                (kak<span class="blue">i</span>masu)<br><br>
+
+                まな<span class="blue">ぶ</span> (manab<span class="blue">u</span>)<br>まな<span class="blue">び</span>ます
+                (manab<span class="blue">i</span>masu)
+
             </div>
         </div>
         <div class="helper__container">
@@ -84,25 +77,47 @@
                 2
             </h2>
             <div class="helper__notes">
-                る　→　た
+                <span class="blue">る → ます</span><br><br>
+
+                たべ<span class="blue">る</span> (tabe<span class="blue">ru</span>)<br>たべ<span class="blue">ます</span>
+                (tabe<span class="blue">masu</span>)<br><br>
+                きえ<span class="blue">る</span> (kie<span class="blue">ru</span>)<br>きえ<span class="blue">ます</span>
+                (kie<span class="blue">masu</span>)<br><br>
+
+                ね<span class="blue">る</span> (ne<span class="blue">uu</span>)<br>ね<span class="blue">ます</span> (ne<span
+                    class="blue">masu</span>)
+
             </div>
             <div class="helper__container">
                 <h2>
                     3
                 </h2>
                 <div class="helper__notes">
-                    する　→　した<br>
-                    くる　→　きた<br>
+                    <span class="blue">する</span>　→　<span class="blue">します</span><br>
+                    <span class="blue">くる</span>　→　<span class="blue">きます<br></span>
+                </div>
+            </div>
+            <div class="helper__container">
+                <h1><span style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">Формы </span>ます</h1>
+                <div class="helper__notes masu__notes masu__forms">
+                    <h2>
+                        Отрицание
+                    </h2>
+                    ま<span class="blue">す</span>　→　ま<span class="blue">せん</span><br>
+                    <h2>
+                        Прошедшее вр.
+                    </h2>
+                    ま<span class="blue">す</span>　→　ま<span class="blue">した</span><br>
+                    <h2>
+                        Прош. отрицание
+                    </h2>
+                    ま<span class="blue">す</span>　→　ま<span class="blue">せんでした</span><br>
+            
                 </div>
             </div>
         </div>
-        <div id="helper__nai/nakatta">
-            <h1>～ない／なかった</h1>
-            <div class="helper__notes">
-                V1　+　ない／なかった
-            </div>
+    </div>
 
-        </div>
     </div>
 </body>
 <script src="js/masuScript.js"></script>
